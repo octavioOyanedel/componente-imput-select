@@ -14,7 +14,11 @@ class CreateComunasTable extends Migration
     public function up()
     {
         Schema::create('comunas', function (Blueprint $table) {
-            $table->id();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
+            $table->increments('id');
+            $table->string('nombre');
+            $table->unsignedInteger('provincia_id'); //restrict    
             $table->timestamps();
         });
     }

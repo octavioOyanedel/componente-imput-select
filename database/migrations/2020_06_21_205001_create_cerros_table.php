@@ -14,7 +14,12 @@ class CreateCerrosTable extends Migration
     public function up()
     {
         Schema::create('cerros', function (Blueprint $table) {
-            $table->id();
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_spanish_ci';
+            $table->increments('id');
+            $table->string('nombre');
+            $table->unsignedInteger('provincia_id'); //restrict
+            $table->unsignedInteger('comuna_id'); //restrict
             $table->timestamps();
         });
     }
