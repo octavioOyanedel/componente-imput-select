@@ -6,14 +6,17 @@ use Illuminate\View\Component;
 
 class Form extends Component
 {
+    public $ruta;
+    public $metodo;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($ruta, $metodo)
     {
-        //
+        $this->ruta = $ruta;
+        $this->metodo = $metodo;
     }
 
     /**

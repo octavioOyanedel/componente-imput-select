@@ -6,7 +6,7 @@
         <title>Laravel</title>
     </head>
     <body>
-        <h1>Formulario select 3 niveles</h1>
-        <h2>Provincia - Comuna - Cerro/Población/Villa</h2>
+		<a class="nav-link" href="{{ route('login') }}">Ingresar</a>
+		<a class="nav-link" href="{{ route('register') }}">Registrar</a>
     </body>
 </html>

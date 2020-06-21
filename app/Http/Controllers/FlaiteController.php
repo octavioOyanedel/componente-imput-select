@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Provincia;
+use App\Flaite;
 use Illuminate\Http\Request;
 
-class ProvinciaController extends Controller
+class FlaiteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,16 +35,16 @@ class ProvinciaController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Provincia  $provincia
+     * @param  \App\Flaite  $flaite
      * @return \Illuminate\Http\Response
      */
-    public function show(Provincia $provincia)
+    public function show(Flaite $flaite)
     {
         //
     }
@@ -52,10 +52,10 @@ class ProvinciaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Provincia  $provincia
+     * @param  \App\Flaite  $flaite
      * @return \Illuminate\Http\Response
      */
-    public function edit(Provincia $provincia)
+    public function edit(Flaite $flaite)
     {
         //
     }
@@ -64,10 +64,10 @@ class ProvinciaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Provincia  $provincia
+     * @param  \App\Flaite  $flaite
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Provincia $provincia)
+    public function update(Request $request, Flaite $flaite)
     {
         //
     }
@@ -75,10 +75,10 @@ class ProvinciaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Provincia  $provincia
+     * @param  \App\Flaite  $flaite
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Provincia $provincia)
+    public function destroy(Flaite $flaite)
     {
         //
     }

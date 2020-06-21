@@ -1,3 +1,6 @@
 <div>
-    <!-- Happiness is not something readymade. It comes from your own actions. - Dalai Lama -->
+    <form action="{{ $ruta }}" method="post">
+    	@include(obtenerCsrf($metodo))
+		<button type="submit">Agregar</button>
+    </form>
 </div>
