@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Cerro;
+use App\Comuna;
 use App\Flaite;
+use App\Provincia;
 use Illuminate\Http\Request;
 
 class FlaiteController extends Controller
@@ -24,7 +27,11 @@ class FlaiteController extends Controller
      */
     public function create()
     {
-        //
+        $provincias = Provincia::orderBy('nombre','ASC')->get();
+        $comunas = Comuna::orderBy('nombre','ASC')->get();
+        $cerros = Cerro::orderBy('nombre','ASC')->get();
+        $coleccion = array('provincias'=>$provincias,'comunas'=>$comunas,'cerros'=>$cerros);
+        return view('app.flaite.create', compact('coleccion'));
     }
 
     /**
@@ -35,7 +42,7 @@ class FlaiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
