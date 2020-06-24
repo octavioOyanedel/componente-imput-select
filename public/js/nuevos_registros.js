@@ -4,7 +4,6 @@ $(document).ready(function() {
 	$('.enlace-nuevo').click(function(e){
 		var nombre = "provincia_id";
 		e.preventDefault();
-		$(this).parent( "div" ).children().css( "background", "yellow" );
 		var hijos = $(this).parent( "div" ).children();
 		// 0: label
 		// 1: a.enlace-nuevo
