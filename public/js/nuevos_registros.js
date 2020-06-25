@@ -11,6 +11,7 @@ $(document).ready(function() {
 		// 3: contenedor-nuevo-input
 		if(control === 0){
 			hijos.eq(2).hide();
+			resetSelect(hijos.eq(2).children().eq(0));
 			hijos.eq(3).append('<input class="nuevo-input form-control form-control-sm" type="text" name="'+nombre+'" placeholder="Nueva '+nombre+'" />');			
 			control = 1;
 		}else{
@@ -21,5 +22,8 @@ $(document).ready(function() {
 
 	});
 
+	function resetSelect(elemento){
+		elemento.prop("selectedIndex", 0).attr('selected','true');
+	}
 
 });
